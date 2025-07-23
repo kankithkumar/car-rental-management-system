@@ -1,0 +1,202 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CaRs | About Us</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="https://kit.fontawesome.com/dbed6b6114.js" crossorigin="anonymous"></script>
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;500;600;700&display=swap');
+
+        * {
+            box-sizing: border-box;
+            margin: 0;
+            padding: 0;
+        }
+
+        body {
+            font-family: 'Playfair Display', serif;
+            overflow: hidden;
+            position: relative;
+            min-height: 100vh;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            background: linear-gradient(120deg, #4158D0, #C850C0, #FFCC70);
+            animation: gradientBackground 8s infinite alternate;
+        }
+
+        /* Animated Background */
+        @keyframes gradientBackground {
+            0% { background: linear-gradient(120deg, #4158D0, #C850C0, #FFCC70); }
+            100% { background: linear-gradient(120deg, #FFCC70, #C850C0, #4158D0); }
+        }
+
+        /* Particle Effect */
+        .particles {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            z-index: -1;
+            overflow: hidden;
+        }
+
+        .particles span {
+            position: absolute;
+            width: 6px;
+            height: 6px;
+            background: rgba(255, 255, 255, 0.8);
+            border-radius: 50%;
+            animation: float 10s infinite ease-in-out;
+        }
+
+        @keyframes float {
+            0% { transform: translateY(0) scale(1); }
+            50% { transform: translateY(-50px) scale(0.7); }
+            100% { transform: translateY(0) scale(1); }
+        }
+
+        .home-btn {
+            position: absolute;
+            top: 20px;
+            right: 30px;
+            background: #FFCC70;
+            padding: 10px 20px;
+            border-radius: 25px;
+            font-size: 1rem;
+            font-weight: bold;
+            text-transform: uppercase;
+            color: #fff;
+            box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);
+            text-decoration: none;
+            transition: background 0.3s, transform 0.3s;
+        }
+
+        .home-btn:hover {
+            background: #C850C0;
+            transform: translateY(-3px);
+        }
+
+        section {
+            background: rgba(255, 255, 255, 0.9);
+            padding: 50px;
+            border-radius: 15px;
+            box-shadow: 0 10px 30px rgba(0, 0, 0, 0.2);
+            text-align: center;
+            max-width: 800px;
+            width: 90%;
+            animation: fadeIn 1.5s ease-in-out;
+        }
+
+        .content h2 {
+            font-size: 2.5rem;
+            color: #333;
+            margin-bottom: 20px;
+            animation: slideIn 1.2s ease-in-out;
+        }
+
+        .content span {
+            display: inline-block;
+            width: 80px;
+            height: 4px;
+            background: #C850C0;
+            margin: 15px auto 30px;
+        }
+
+        .content p {
+            font-size: 1.2rem;
+            line-height: 1.8;
+            color: #666;
+            margin-bottom: 30px;
+            animation: fadeIn 2s ease-in;
+        }
+
+        .content ul {
+            text-align: left;
+            margin: 20px 0;
+            padding: 0;
+        }
+
+        .content ul li {
+            font-size: 1.1rem;
+            line-height: 1.8;
+            color: #555;
+            margin-bottom: 15px;
+        }
+
+        .icons {
+            margin-top: 20px;
+        }
+
+        .icons li {
+            display: inline-block;
+            margin: 0 10px;
+        }
+
+        .icons li i {
+            font-size: 1.8rem;
+            color: #FFCC70;
+            transition: color 0.3s, transform 0.3s;
+        }
+
+        .icons li i:hover {
+            color: #C850C0;
+            transform: scale(1.2);
+        }
+
+        @keyframes fadeIn {
+            from { opacity: 0; transform: scale(0.9); }
+            to { opacity: 1; transform: scale(1); }
+        }
+
+        @keyframes slideIn {
+            from { transform: translateY(-20px); opacity: 0; }
+            to { transform: translateY(0); opacity: 1; }
+        }
+
+        @media (max-width: 768px) {
+            .content h2 { font-size: 1.8rem; }
+            .content p { font-size: 1rem; }
+            .icons li i { font-size: 1.5rem; }
+            .home-btn { padding: 8px 15px; font-size: 0.9rem; }
+        }
+    </style>
+</head>
+<body>
+    <div class="particles">
+        <!-- Particle spans -->
+        <span style="top: 10%; left: 20%; animation-delay: 0s;"></span>
+        <span style="top: 30%; left: 60%; animation-delay: 2s;"></span>
+        <span style="top: 50%; left: 40%; animation-delay: 4s;"></span>
+        <span style="top: 70%; left: 80%; animation-delay: 6s;"></span>
+    </div>
+
+    <a href="cardetails.php" class="home-btn">Home</a>
+
+    <section>
+        <div class="content">
+            <h2>About Us</h2>
+            <span></span>
+            <p>
+                At <strong>Car Rentals</strong>, we strive to provide exceptional car rental services that make your journeys unforgettable. 
+                We believe in bringing luxury, comfort, and convenience to our customers at affordable prices.
+            </p>
+            <ul>
+                <li>Wide selection of vehicles to suit your needs, from compact cars to luxury sedans.</li>
+                <li>Easy booking process with flexible rental terms and transparent pricing.</li>
+                <li>24/7 customer support to assist you throughout your journey.</li>
+                <li>Committed to safety and sustainability with well-maintained vehicles.</li>
+            </ul>
+            <ul class="icons">
+                <li><i class="fa fa-twitter"></i></li>
+                <li><i class="fa fa-facebook"></i></li>
+                <li><i class="fa fa-github"></i></li>
+                <li><i class="fa fa-pinterest"></i></li>
+            </ul>
+        </div>
+    </section>
+</body>
+</html>

@@ -1,0 +1,239 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Arial', sans-serif;
+    background-color: #f4f4f4;
+}
+
+.hai, .main {
+    width: 100%;
+    height: 109vh;
+    background: linear-gradient(to top, rgba(0,0,0,0.7), rgba(0,0,0,0.3)), url("../images/carbg2.jpg");
+    background-position: center;
+    background-size: cover;
+    animation: infiniteScrollBg 60s linear infinite;
+}
+
+/* Infinite Scroll Animation */
+@keyframes infiniteScrollBg {
+    0% { background-position: 0% 50%; }
+    100% { background-position: 100% 50%; }
+}
+
+.navbar {
+    width: 1200px;
+    height: 75px;
+    margin: auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.icon {
+    height: 70px;
+}
+
+.logo {
+    color: #ff9800;
+    font-size: 35px;
+    font-family: 'Arial', sans-serif;
+    padding-left: 20px;
+    padding-top: 10px;
+}
+
+.menu {
+    display: flex;
+    align-items: center;
+}
+
+.menu ul {
+    display: flex;
+    list-style: none;
+    gap: 60px;
+}
+
+.menu ul li a {
+    text-decoration: none;
+    color: #ffffff;
+    font-weight: bold;
+    transition: color 0.4s ease-in-out;
+}
+
+.menu ul li a:hover {
+    color: #ff9800;
+}
+
+.search {
+    margin-left: auto;
+    display: flex;
+}
+
+.srch {
+    width: 200px;
+    height: 40px;
+    background: transparent;
+    border: 2px solid #ff9800;
+    color: white;
+    padding: 0 10px;
+    border-top-left-radius: 5px;
+    border-bottom-left-radius: 5px;
+}
+
+.btn {
+    width: 100px;
+    height: 40px;
+    background: #ff9800;
+    border: 2px solid #ff9800;
+    color: white;
+    font-size: 15px;
+    cursor: pointer;
+    border-top-right-radius: 5px;
+    border-bottom-right-radius: 5px;
+}
+
+.btn:hover {
+    background-color: white;
+    color: #ff9800;
+}
+
+.content {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding-top: 80px;
+    color: #ffffff;
+    position: relative;
+}
+
+.content h1 {
+    font-family: 'Times New Roman', serif;
+    font-size: 56px;
+    margin-top: 80px;
+    padding-left: 20px;
+    letter-spacing: 2px;
+    text-transform: uppercase;
+}
+
+.content .par {
+    padding-left: 20px;
+    font-size: 18px;
+    line-height: 1.8;
+    letter-spacing: 1.2px;
+}
+
+.content .cn {
+    width: 160px;
+    height: 40px;
+    background: #ff9800;
+    border: none;
+    font-size: 18px;
+    border-radius: 10px;
+    cursor: pointer;
+    margin-left: 20px;
+    transition: background-color 0.4s ease;
+}
+
+.content .cn a {
+    text-decoration: none;
+    color: white;
+    font-weight: bold;
+}
+
+.content .cn:hover {
+    background-color: #fff;
+    color: #ff9800;
+}
+
+.form {
+    width: 300px;
+    padding: 30px;
+    background: rgba(0,0,0,0.7);
+    position: absolute;
+    top: 50px;
+    right: 50px;
+    border-radius: 10px;
+    color: white;
+    box-shadow: 0 0 15px rgba(0,0,0,0.5);
+}
+
+.form h2 {
+    background-color: #ff9800;
+    padding: 10px;
+    font-size: 22px;
+    border-radius: 5px;
+    text-align: center;
+}
+
+.form input {
+    width: 100%;
+    height: 35px;
+    margin-top: 20px;
+    background: transparent;
+    border: none;
+    border-bottom: 2px solid #ff9800;
+    color: white;
+    font-size: 16px;
+    padding: 5px 0;
+}
+
+.form input::placeholder {
+    color: #ccc;
+}
+
+.btnn {
+    width: 100%;
+    height: 40px;
+    background: #ff9800;
+    border: none;
+    margin-top: 30px;
+    color: white;
+    font-size: 18px;
+    cursor: pointer;
+    transition: background-color 0.4s ease;
+}
+
+.btnn:hover {
+    background: white;
+    color: #ff9800;
+}
+
+.liw, .link {
+    text-align: center;
+    color: #fff;
+    margin-top: 20px;
+}
+
+.link a {
+    color: #ff9800;
+    text-decoration: none;
+}
+
+.icon a, .icon ion-icon {
+    color: #fff;
+    font-size: 30px;
+    transition: color 0.4s ease;
+}
+
+.icon ion-icon:hover {
+    color: #ff9800;
+}
+
+.adminbtn {
+    width: 150px;
+    height: 40px;
+    background: #ff9800;
+    border: none;
+    font-size: 18px;
+    border-radius: 10px;
+    color: white;
+    cursor: pointer;
+    transition: background-color 0.4s ease;
+}
+
+.adminbtn:hover {
+    background-color: #ffffff;
+    color: #ff9800;
+}
